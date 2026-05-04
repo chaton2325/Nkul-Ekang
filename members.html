@@ -11,13 +11,28 @@
     <style>
         .members-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2.5rem;
         }
         .member-card {
             border: 1px solid var(--color-black);
-            padding: 2rem;
+            padding: 0;
             text-align: center;
+            background: var(--color-white);
+        }
+        .member-photo {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            border-bottom: 1px solid var(--color-black);
+            filter: grayscale(100%);
+            transition: filter 0.3s ease;
+        }
+        .member-card:hover .member-photo {
+            filter: grayscale(0%);
+        }
+        .member-info {
+            padding: 1.5rem;
         }
         .member-role {
             text-transform: uppercase;
@@ -30,6 +45,7 @@
         .member-name {
             font-size: 1.1rem;
             font-weight: 900;
+            line-height: 1.2;
         }
     </style>
 </head>
@@ -55,10 +71,10 @@
     </header>
 
     <main>
-        <section style="background: var(--color-black); color: var(--color-white); padding: 4rem 0;">
+        <section class="page-banner" style="background-image: url('https://images.unsplash.com/photo-1532296155921-274640824b45?auto=format&fit=crop&q=80&w=2000');">
             <div class="container">
                 <h1>Our Leadership</h1>
-                <p style="opacity: 0.8; margin-top: 1rem;">The dedicated individuals steering our mission forward.</p>
+                <p style="opacity: 0.9; margin-top: 1rem; max-width: 600px;">The dedicated individuals steering our mission forward with passion and integrity.</p>
             </div>
         </section>
 
@@ -67,32 +83,56 @@
                 <h2 style="margin-bottom: 3rem; border-bottom: 2px solid var(--color-yellow); display: inline-block; padding-bottom: 0.5rem;">Board of Directors</h2>
                 <div class="members-grid">
                     <div class="member-card">
-                        <span class="member-role">President</span>
-                        <span class="member-name">Jean-Paul Nze</span>
+                        <img src="assets/images/members/mekinda.png" alt="Mekinda Mekinda Andre Ledoux Junior" class="member-photo">
+                        <div class="member-info">
+                            <span class="member-role">President</span>
+                            <span class="member-name">Mekinda Mekinda Andre Ledoux Junior</span>
+                        </div>
                     </div>
                     <div class="member-card">
-                        <span class="member-role">Vice President</span>
-                        <span class="member-name">Marie-Claire Obiang</span>
+                        <img src="assets/images/members/Rosalie.jpg" alt="Rosalie" class="member-photo">
+                        <div class="member-info">
+                            <span class="member-role">Vice President</span>
+                            <span class="member-name">Rosalie Tamo</span>
+                        </div>
                     </div>
                     <div class="member-card">
-                        <span class="member-role">General Secretary</span>
-                        <span class="member-name">Dominique Mba</span>
+                        <img src="assets/images/members/catherine.jpg" alt="Catherine" class="member-photo">
+                        <div class="member-info">
+                            <span class="member-role">General Secretary</span>
+                            <span class="member-name">Catherine Abodo </span>
+                        </div>
+                    </div>
+                    <!--div class="member-card">
+                        <div style="aspect-ratio: 1/1; background: var(--color-gray-light); display: flex; align-items: center; justify-content: center; border-bottom: 1px solid var(--color-black);">
+                            <span style="font-size: 0.8rem; font-weight: 700; color: #999;">PHOTO PENDING</span>
+                        </div>
+                        <div class="member-info">
+                            <span class="member-role">Treasurer</span>
+                            <span class="member-name">Sarah Ekang</span>
+                        </div>
                     </div>
                     <div class="member-card">
-                        <span class="member-role">Treasurer</span>
-                        <span class="member-name">Sarah Ekang</span>
+                        <div style="aspect-ratio: 1/1; background: var(--color-gray-light); display: flex; align-items: center; justify-content: center; border-bottom: 1px solid var(--color-black);">
+                            <span style="font-size: 0.8rem; font-weight: 700; color: #999;">PHOTO PENDING</span>
+                        </div>
+                        <div class="member-info">
+                            <span class="member-role">Public Relations</span>
+                            <span class="member-name">Luc Békalé</span>
+                        </div>
                     </div>
                     <div class="member-card">
-                        <span class="member-role">Public Relations</span>
-                        <span class="member-name">Luc Békalé</span>
+                        <div style="aspect-ratio: 1/1; background: var(--color-gray-light); display: flex; align-items: center; justify-content: center; border-bottom: 1px solid var(--color-black);">
+                            <span style="font-size: 0.8rem; font-weight: 700; color: #999;">PHOTO PENDING</span>
+                        </div>
+                        <div class="member-info">
+                            <span class="member-role">Legal Counsel</span>
+                            <span class="member-name">Patricia Ndong</span>
+                        </div>
                     </div>
-                    <div class="member-card">
-                        <span class="member-role">Legal Counsel</span>
-                        <span class="member-name">Patricia Ndong</span>
-                    </div>
-                </div>
+                </div-->
 
-                <h2 style="margin-top: 5rem; margin-bottom: 3rem; border-bottom: 2px solid var(--color-brown); display: inline-block; padding-bottom: 0.5rem;">Regional Representatives</h2>
+                <!--h2 style="margin-top: 5rem; margin-bottom: 3rem; border-bottom: 2px solid var(--color-brown); display: inline-block; padding-bottom: 0.5rem;">Regional Representatives</h2>
                 <div class="members-grid">
                     <div class="member-card">
                         <span class="member-role">East Coast</span>
@@ -110,7 +150,7 @@
                         <span class="member-role">South</span>
                         <span class="member-name">Hélène Abessolo</span>
                     </div>
-                </div>
+                </div-->
             </div>
         </section>
     </main>
