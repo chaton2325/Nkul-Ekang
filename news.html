@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News | Nkul Ekang Y America</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .news-item {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 3rem;
+            margin-bottom: 4rem;
+            padding-bottom: 4rem;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .news-date {
+            font-weight: 700;
+            color: var(--color-brown);
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            border-left: 4px solid var(--color-yellow);
+            padding-left: 1rem;
+            height: fit-content;
+        }
+        .news-content h2 {
+            margin-bottom: 1rem;
+            font-size: 1.75rem;
+        }
+        .news-content p {
+            color: #444;
+            margin-bottom: 1.5rem;
+            max-width: 800px;
+        }
+        @media (max-width: 768px) {
+            .news-item {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 1rem;">
+                    <img src="assets/images/logos/logo-removebg.png" alt="Logo" style="height: 50px;">
+                    <span>Nkul Ekang Y America</span>
+                </a>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="activities.html">Activities</a>
+                    <a href="members.html">Members</a>
+                    <a href="news.html">News</a>
+                    <a href="galleria.html">Galleria</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section style="background: var(--color-gray-light); padding: 4rem 0;">
+            <div class="container">
+                <h1>Latest News</h1>
+                <p style="opacity: 0.8; margin-top: 1rem;">Stay updated with our community's latest developments and announcements.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <!-- News 1 -->
+                <article class="news-item">
+                    <div class="news-date">May 15, 2026</div>
+                    <div class="news-content">
+                        <h2>Preparations for the 2026 Annual Convention</h2>
+                        <p>We are excited to announce that the planning for our next annual convention is well underway. This year's theme focuses on "Digital Empowerment in the Modern Diaspora." Join us for a weekend of networking and growth.</p>
+                        <a href="#" style="font-weight: 700; border-bottom: 2px solid var(--color-black);">Read Full Article</a>
+                    </div>
+                </article>
+
+                <!-- News 2 -->
+                <article class="news-item">
+                    <div class="news-date">April 02, 2026</div>
+                    <div class="news-content">
+                        <h2>New Scholarship Program Launched</h2>
+                        <p>In our commitment to educational excellence, we have officially launched the 2026 Scholarship Program for undergraduate students. Applications are now open for all active members' dependents who demonstrate academic merit.</p>
+                        <a href="#" style="font-weight: 700; border-bottom: 2px solid var(--color-black);">Read Full Article</a>
+                    </div>
+                </article>
+
+                <!-- News 3 -->
+                <article class="news-item">
+                    <div class="news-date">March 10, 2026</div>
+                    <div class="news-content">
+                        <h2>Regional Meetups: Success Across the East Coast</h2>
+                        <p>Our recent series of regional meetups in New York and Philadelphia saw record attendance. It was heartening to see so many families connecting and sharing their experiences within the community.</p>
+                        <a href="#" style="font-weight: 700; border-bottom: 2px solid var(--color-black);">Read Full Article</a>
+                    </div>
+                </article>
+
+                <!-- News 4 -->
+                <article class="news-item" style="border-bottom: none;">
+                    <div class="news-date">February 20, 2026</div>
+                    <div class="news-content">
+                        <h2>Community Impact Report: 2025 Retrospective</h2>
+                        <p>We have published our full impact report for the year 2025. Thanks to your generous support, we were able to exceed our fundraising goals and expand our outreach programs significantly.</p>
+                        <a href="#" style="font-weight: 700; border-bottom: 2px solid var(--color-black);">Read Full Article</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="logo" style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                        <img src="assets/images/logos/logo-removebg.png" alt="Logo" style="height: 40px; filter: brightness(0) invert(1);">
+                        <span>Nkul Ekang Y America</span>
+                    </div>
+                    <p>Empowering the Ekang community through unity and service since 2015.</p>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 1.5rem;">Navigation</h4>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 0.5rem;"><a href="index.html">Home</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="about.html">About</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="activities.html">Activities</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="members.html">Members</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 1.5rem;">Contact</h4>
+                    <p>Washington, D.C., USA</p>
+                    <p>info@nkulekangamerica.org</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Nkul Ekang Y America. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

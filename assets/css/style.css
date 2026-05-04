@@ -1,0 +1,160 @@
+/* 
+   NKUL EKANG Y AMERICA - DESIGN SYSTEM
+   Theme: Institutional, Minimalist, Sharp
+*/
+
+:root {
+    --color-black: #0B0B0B;
+    --color-white: #FFFFFF;
+    --color-brown: #6B4F3A;
+    --color-yellow: #D6B65F;
+    --color-gray-light: #F5F5F5;
+    --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+    --container-width: 1200px;
+    --spacing-base: 1rem;
+}
+
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--color-white);
+    color: var(--color-black);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Typography */
+h1, h2, h3, h4 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+/* Layout Elements */
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+section {
+    padding: 5rem 0;
+}
+
+/* Header & Navigation */
+header {
+    background: var(--color-white);
+    border-bottom: 1px solid var(--color-black);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.logo {
+    font-size: 1.25rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.nav-links a:hover {
+    color: var(--color-brown);
+}
+
+/* Components - NO BORDER RADIUS */
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: var(--color-black);
+    color: var(--color-white);
+    border: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: var(--color-brown);
+}
+
+.btn-alt {
+    background: var(--color-yellow);
+    color: var(--color-black);
+}
+
+.btn-alt:hover {
+    background: #c2a353;
+}
+
+/* Sharp Cards */
+.card {
+    border: 1px solid #e0e0e0;
+    padding: 2rem;
+}
+
+/* Footer */
+footer {
+    background: var(--color-black);
+    color: var(--color-white);
+    padding: 4rem 0 2rem;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.footer-bottom {
+    border-top: 1px solid #333;
+    padding-top: 2rem;
+    font-size: 0.8rem;
+    text-align: center;
+    opacity: 0.7;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Simplification for prototype */
+    }
+    
+    section {
+        padding: 3rem 0;
+    }
+    
+    h1 { font-size: 2rem; }
+}
