@@ -91,6 +91,24 @@ nav {
     color: var(--color-brown);
 }
 
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 10px;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: var(--color-black);
+    transition: 0.3s;
+}
+
 /* Components - NO BORDER RADIUS */
 .btn {
     display: inline-block;
@@ -180,13 +198,67 @@ footer {
 
 /* Responsiveness */
 @media (max-width: 768px) {
-    .nav-links {
-        display: none; /* Simplification for prototype */
+    nav {
+        height: 70px;
     }
-    
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: var(--color-white);
+        flex-direction: column;
+        padding: 2rem;
+        gap: 1.5rem;
+        border-bottom: 1px solid var(--color-black);
+        z-index: 999;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        font-size: 1rem;
+        width: 100%;
+        text-align: center;
+    }
+
     section {
         padding: 3rem 0;
     }
     
-    h1 { font-size: 2rem; }
+    h1 { font-size: 2.2rem; }
+    h2 { font-size: 1.8rem; }
+
+    .container {
+        padding: 0 1.5rem;
+    }
+
+    /* Grid adjustments for mobile */
+    .footer-grid, 
+    .stats-grid, 
+    .values-grid,
+    .members-grid {
+        grid-template-columns: 1fr !important;
+        gap: 2rem;
+    }
+
+    /* Specific layout fixes for About and Home */
+    .about-content-split {
+        grid-template-columns: 1fr !important;
+        text-align: center;
+        gap: 2rem !important;
+    }
+
+    .about-content-split img {
+        max-width: 250px !important;
+        margin: 0 auto;
+    }
 }
