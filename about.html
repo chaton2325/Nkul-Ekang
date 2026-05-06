@@ -45,18 +45,26 @@
     <header>
         <div class="container">
             <nav>
-                <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 1rem;">
+                <a href="index.html" class="logo">
                     <img src="assets/images/logos/logo-removebg.png" alt="Logo" style="height: 50px;">
-                    <span>Nkul Ekang Y America</span>
+                    <div class="logo-text">
+                        <span>Nkul Ekang</span>
+                        <span>Y America</span>
+                    </div>
                 </a>
                 <div class="nav-links">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="activities.html">Activities</a>
-                    <a href="members.html">Members</a>
-                    <a href="news.html">News</a>
-                    <a href="galleria.html">Galleria</a>
-                    <a href="contact.html">Contact</a>
+                    <a href="index.html" data-i18n="nav-home">Home</a>
+                    <a href="about.html" data-i18n="nav-about">About</a>
+                    <a href="activities.html" data-i18n="nav-activities">Activities</a>
+                    <a href="members.html" data-i18n="nav-members">Members</a>
+                    <a href="news.html" data-i18n="nav-news">News</a>
+                    <a href="galleria.html" data-i18n="nav-galleria">Galleria</a>
+                    <a href="contact.html" data-i18n="nav-contact">Contact</a>
+                </div>
+                <div class="lang-switcher">
+                    <span class="lang-btn active" data-lang="en">EN</span>
+                    <span class="lang-btn" data-lang="fr">FR</span>
+                    <span class="lang-btn" data-lang="es">ES</span>
                 </div>
                 <button class="menu-toggle" aria-label="Toggle Menu">
                     <span></span>
@@ -70,8 +78,8 @@
     <main>
         <section class="page-banner" style="background-image: url('assets/images/baniereabout.jpg');">
             <div class="container">
-                <h1>Our Identity & Heritage</h1>
-                <p style="font-size: 1.25rem; opacity: 0.9; margin-top: 1rem; max-width: 700px;">Preserving the legacy of the Ekang people and fostering excellence in the American diaspora.</p>
+                <h1 data-i18n="about-hero-title">Our Identity & Heritage</h1>
+                <p style="font-size: 1.25rem; opacity: 0.9; margin-top: 1rem; max-width: 700px;" data-i18n="about-hero-subtitle">Preserving the legacy of the Ekang people and fostering excellence in the American diaspora.</p>
             </div>
         </section>
 
@@ -82,9 +90,9 @@
                         <img src="assets/images/logos/logo-removebg.png" alt="Nkul Ekang Logo" style="width: 100%; max-width: 450px;">
                     </div>
                     <div>
-                        <h2 style="margin-bottom: 1.5rem; color: var(--color-brown);">The Voice of Our Heritage</h2>
-                        <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">The <strong>Nkul</strong> is the ancestral talking drum of the Ekang people. For generations, it has served as a sophisticated communication tool, transmitting messages over long distances through the dense equatorial forests of Central Africa.</p>
-                        <p style="font-size: 1.1rem;">By naming our association <strong>Nkul Ekang Y'America</strong>, we honor this tradition of communication and gathering. We strive to be the modern "Nkul" that calls upon all sons and daughters of the Ekang diaspora to unite, share, and thrive together in the United States.</p>
+                        <h2 style="margin-bottom: 1.5rem; color: var(--color-brown);" data-i18n="about-voice-title">The Voice of Our Heritage</h2>
+                        <p style="font-size: 1.1rem; margin-bottom: 1.5rem;" data-i18n="about-voice-p1">The <strong>Nkul</strong> is the ancestral talking drum of the Ekang people. For generations, it has served as a sophisticated communication tool, transmitting messages over long distances through the dense equatorial forests of Central Africa.</p>
+                        <p style="font-size: 1.1rem;" data-i18n="about-voice-p2">By naming our association <strong>Nkul Ekang Y'America</strong>, we honor this tradition of communication and gathering. We strive to be the modern "Nkul" that calls upon all sons and daughters of the Ekang diaspora to unite, share, and thrive together in the United States.</p>
                     </div>
                 </div>
             </div>
@@ -93,34 +101,34 @@
         <section>
             <div class="container">
                 <div class="about-content">
-                    <h2 style="margin-bottom: 2rem;">Who We Are</h2>
-                    <p style="margin-bottom: 1.5rem;">Nkul Ekang Y America is a vibrant community of the Ekang diaspora residing in North America. The Ekang people, primarily from Cameroon, Gabon, and Equatorial Guinea, comprise a group of closely related Bantu ethnic clusters including the <strong>Beti, Bulu, and Fang</strong>. We share a common language family, a warrior heritage, and a deep-rooted oral tradition.</p>
-                    <p style="margin-bottom: 1.5rem;">Our organization serves as a bridge between our ancestral traditions and the modern American landscape. We provide a support network for newcomers, a platform for professional growth, and a guardian for our cultural identity, ensuring that our unique values continue to inspire future generations.</p>
+                    <h2 style="margin-bottom: 2rem;" data-i18n="about-who-title">Who We Are</h2>
+                    <p style="margin-bottom: 1.5rem;" data-i18n="about-who-p1">Nkul Ekang Y America is a vibrant community of the Ekang diaspora residing in North America. The Ekang people, primarily from Cameroon, Gabon, and Equatorial Guinea, comprise a group of closely related Bantu ethnic clusters including the <strong>Beti, Bulu, and Fang</strong>. We share a common language family, a warrior heritage, and a deep-rooted oral tradition.</p>
+                    <p style="margin-bottom: 1.5rem;" data-i18n="about-who-p2">Our organization serves as a bridge between our ancestral traditions and the modern American landscape. We provide a support network for newcomers, a platform for professional growth, and a guardian for our cultural identity, ensuring that our unique values continue to inspire future generations.</p>
 
-                    <h2 style="margin-top: 4rem; margin-bottom: 2rem;">The Spirit of the Mvet</h2>
-                    <p style="margin-bottom: 1.5rem;">At the heart of our culture lies the <strong>Mvet</strong>—both a sacred musical instrument and an epic cycle of oral literature. The Mvet bards tell the stories of the immortal warriors of Engong, representing the idealized strength, wisdom, and resilience of the Ekang people. This spirit of resilience and intellectual depth guides our mission in the United States.</p>
+                    <h2 style="margin-top: 4rem; margin-bottom: 2rem;" data-i18n="about-mvet-title">The Spirit of the Mvet</h2>
+                    <p style="margin-bottom: 1.5rem;" data-i18n="about-mvet-p1">At the heart of our culture lies the <strong>Mvet</strong>—both a sacred musical instrument and an epic cycle of oral literature. The Mvet bards tell the stories of the immortal warriors of Engong, representing the idealized strength, wisdom, and resilience of the Ekang people. This spirit of resilience and intellectual depth guides our mission in the United States.</p>
 
-                    <h2 style="margin-top: 4rem; margin-bottom: 2rem;">Our History & Origins</h2>
-                    <p style="margin-bottom: 1.5rem;">Our history is one of movement and perseverance. Tracing our origins back to the Adamaoua Plateau, our ancestors undertook the <strong>Great Migration</strong> southward into the equatorial forests. A defining moment in our collective memory is the legendary crossing of the <strong>Sanaga River (Yom)</strong>, marking our entry into the lands we call home today.</p>
-                    <p>Founded in 2015 in Washington, D.C., Nkul Ekang Y America was born from the need to recreate the solidarity of our ancestral clans in a new land. Today, we have grown into a nationwide organization, representing a dynamic community that contributes significantly to the American fabric while staying firmly rooted in its African origins.</p>
+                    <h2 style="margin-top: 4rem; margin-bottom: 2rem;" data-i18n="about-history-title">Our History & Origins</h2>
+                    <p style="margin-bottom: 1.5rem;" data-i18n="about-history-p1">Our history is one of movement and perseverance. Tracing our origins back to the Adamaoua Plateau, our ancestors undertook the <strong>Great Migration</strong> southward into the equatorial forests. A defining moment in our collective memory is the legendary crossing of the <strong>Sanaga River (Yom)</strong>, marking our entry into the lands we call home today.</p>
+                    <p data-i18n="about-history-p2">Founded in 2015 in Washington, D.C., Nkul Ekang Y America was born from the need to recreate the solidarity of our ancestral clans in a new land. Today, we have grown into a nationwide organization, representing a dynamic community that contributes significantly to the American fabric while staying firmly rooted in its African origins.</p>
 
-                    <h2 style="margin-top: 4rem; margin-bottom: 2rem;">Our Core Values</h2>
+                    <h2 style="margin-top: 4rem; margin-bottom: 2rem;" data-i18n="about-values-title">Our Core Values</h2>
                     <div class="values-grid">
                         <div class="value-card">
-                            <h3>Unity (Nlang)</h3>
-                            <p>Fostering a strong sense of belonging and mutual support among all members, reflecting the clan solidarity of our ancestors.</p>
+                            <h3 data-i18n="value-unity-title">Unity (Nlang)</h3>
+                            <p data-i18n="value-unity-desc">Fostering a strong sense of belonging and mutual support among all members, reflecting the clan solidarity of our ancestors.</p>
                         </div>
                         <div class="value-card">
-                            <h3>Integrity</h3>
-                            <p>Operating with transparency and honor, upholding the dignity of the Ekang name in all our professional and personal dealings.</p>
+                            <h3 data-i18n="value-integrity-title">Integrity</h3>
+                            <p data-i18n="value-integrity-desc">Operating with transparency and honor, upholding the dignity of the Ekang name in all our professional and personal dealings.</p>
                         </div>
                         <div class="value-card">
-                            <h3>Excellence</h3>
-                            <p>Striving for the highest standards in education and career, honoring our legacy as people of progress.</p>
+                            <h3 data-i18n="value-excellence-title">Excellence</h3>
+                            <p data-i18n="value-excellence-desc">Striving for the highest standards in education and career, honoring our legacy as people of progress.</p>
                         </div>
                         <div class="value-card">
-                            <h3>Heritage</h3>
-                            <p>Preserving the wisdom of the Mvet, our languages, and our traditions for the children of the diaspora.</p>
+                            <h3 data-i18n="value-heritage-title">Heritage</h3>
+                            <p data-i18n="value-heritage-desc">Preserving the wisdom of the Mvet, our languages, and our traditions for the children of the diaspora.</p>
                         </div>
                     </div>
                 </div>
@@ -136,30 +144,31 @@
                         <img src="assets/images/logos/logo-removebg.png" alt="Logo" style="height: 40px;">
                         <span>Nkul Ekang Y America</span>
                     </div>
-                    <p>Empowering the Ekang community through unity and service since 2015.</p>
+                    <p data-i18n="footer-desc">Empowering the Ekang community through unity and service since 2015.</p>
                 </div>
                 <div>
-                    <h4 style="margin-bottom: 1.5rem;">Navigation</h4>
+                    <h4 style="margin-bottom: 1.5rem;" data-i18n="footer-nav">Navigation</h4>
                     <ul style="list-style: none;">
-                        <li style="margin-bottom: 0.5rem;"><a href="index.html">Home</a></li>
-                        <li style="margin-bottom: 0.5rem;"><a href="about.html">About</a></li>
-                        <li style="margin-bottom: 0.5rem;"><a href="activities.html">Activities</a></li>
-                        <li style="margin-bottom: 0.5rem;"><a href="members.html">Members</a></li>
-                        <li style="margin-bottom: 0.5rem;"><a href="contact.html">Contact</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="index.html" data-i18n="nav-home">Home</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="about.html" data-i18n="nav-about">About</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="activities.html" data-i18n="nav-activities">Activities</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="members.html" data-i18n="nav-members">Members</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="contact.html" data-i18n="nav-contact">Contact</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 style="margin-bottom: 1.5rem;">Contact</h4>
-                    <p>Washington, D.C., USA</p>
+                    <h4 style="margin-bottom: 1.5rem;" data-i18n="footer-contact">Contact</h4>
+                    <p data-i18n="footer-addr-dc">Washington, D.C., USA</p>
                     <p>info@nkulekangamerica.org</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                &copy; 2026 Nkul Ekang Y America. All rights reserved.
+                &copy; 2026 Nkul Ekang Y America. <span data-i18n="rights">All rights reserved.</span>
             </div>
         </div>
     </footer>
 
+    <script src="assets/js/translations.js"></script>
     <script>
         const menuToggle = document.querySelector('.menu-toggle');
         const navLinks = document.querySelector('.nav-links');

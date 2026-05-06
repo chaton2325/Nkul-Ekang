@@ -75,18 +75,26 @@
     <header>
         <div class="container">
             <nav>
-                <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 1rem;">
+                <a href="index.html" class="logo">
                     <img src="assets/images/logos/logo-removebg.png" alt="Logo" style="height: 50px;">
-                    <span>Nkul Ekang Y America</span>
+                    <div class="logo-text">
+                        <span>Nkul Ekang</span>
+                        <span>Y America</span>
+                    </div>
                 </a>
                 <div class="nav-links">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="activities.html">Activities</a>
-                    <a href="members.html">Members</a>
-                    <a href="news.html">News</a>
-                    <a href="galleria.html">Galleria</a>
-                    <a href="contact.html">Contact</a>
+                    <a href="index.html" data-i18n="nav-home">Home</a>
+                    <a href="about.html" data-i18n="nav-about">About</a>
+                    <a href="activities.html" data-i18n="nav-activities">Activities</a>
+                    <a href="members.html" data-i18n="nav-members">Members</a>
+                    <a href="news.html" data-i18n="nav-news">News</a>
+                    <a href="galleria.html" data-i18n="nav-galleria">Galleria</a>
+                    <a href="contact.html" data-i18n="nav-contact">Contact</a>
+                </div>
+                <div class="lang-switcher">
+                    <span class="lang-btn active" data-lang="en">EN</span>
+                    <span class="lang-btn" data-lang="fr">FR</span>
+                    <span class="lang-btn" data-lang="es">ES</span>
                 </div>
                 <button class="menu-toggle" aria-label="Toggle Menu">
                     <span></span>
@@ -100,8 +108,8 @@
     <main>
         <section class="page-banner" style="background-image: url('assets/images/banieregalerie.jpg');">
             <div class="container">
-                <h1>Visual Journey</h1>
-                <p style="opacity: 0.9; margin-top: 1rem; max-width: 600px;">Capturing moments of unity, celebration, and impact across our chapters.</p>
+                <h1 data-i18n="galleria-hero-title">Visual Journey</h1>
+                <p style="opacity: 0.9; margin-top: 1rem; max-width: 600px;" data-i18n="galleria-hero-subtitle">Capturing moments of unity, celebration, and impact across our chapters.</p>
             </div>
         </section>
 
@@ -112,48 +120,48 @@
                     <div class="gallery-item">
                         <img src="assets/images/gallery/1.jpg" alt="Annual Gala 2025">
                         <div class="gallery-overlay">
-                            <span>Event</span>
-                            <h3>Annual Gala 2025</h3>
+                            <span data-i18n="gallery-tag-event">Event</span>
+                            <h3 data-i18n="gallery-1-title">Annual Gala 2025</h3>
                         </div>
                     </div>
                     <!-- Item 2 -->
                     <div class="gallery-item">
                         <img src="assets/images/gallery/2.jpg" alt="Youth Workshop">
                         <div class="gallery-overlay">
-                            <span>Education</span>
-                            <h3>Youth Mentorship Workshop</h3>
+                            <span data-i18n="gallery-tag-edu">Education</span>
+                            <h3 data-i18n="gallery-2-title">Youth Mentorship Workshop</h3>
                         </div>
                     </div>
                     <!-- Item 3 -->
                     <div class="gallery-item">
                         <img src="assets/images/gallery/3.jpg" alt="Cultural Festival">
                         <div class="gallery-overlay">
-                            <span>Culture</span>
-                            <h3>Ekang Cultural Festival</h3>
+                            <span data-i18n="gallery-tag-culture">Culture</span>
+                            <h3 data-i18n="gallery-3-title">Ekang Cultural Festival</h3>
                         </div>
                     </div>
                     <!-- Item 4 -->
                     <div class="gallery-item">
                         <img src="assets/images/gallery/4.jpg" alt="Community Dinner">
                         <div class="gallery-overlay">
-                            <span>Unity</span>
-                            <h3>Regional Community Dinner</h3>
+                            <span data-i18n="gallery-tag-unity">Unity</span>
+                            <h3 data-i18n="gallery-4-title">Regional Community Dinner</h3>
                         </div>
                     </div>
                     <!-- Item 5 -->
                     <div class="gallery-item">
                         <img src="assets/images/gallery/5.jpg" alt="Board Meeting">
                         <div class="gallery-overlay">
-                            <span>Leadership</span>
-                            <h3>Strategic Planning Session</h3>
+                            <span data-i18n="gallery-tag-lead">Leadership</span>
+                            <h3 data-i18n="gallery-5-title">Strategic Planning Session</h3>
                         </div>
                     </div>
                     <!-- Item 6 -->
                     <div class="gallery-item">
                         <img src="assets/images/gallery/6.jpg" alt="Volunteer Day">
                         <div class="gallery-overlay">
-                            <span>Service</span>
-                            <h3>Local Community Volunteer Day</h3>
+                            <span data-i18n="gallery-tag-service">Service</span>
+                            <h3 data-i18n="gallery-6-title">Local Community Volunteer Day</h3>
                         </div>
                     </div>
                 </div>
@@ -169,30 +177,31 @@
                         <img src="assets/images/logos/logo-removebg.png" alt="Logo" style="height: 40px;">
                         <span>Nkul Ekang Y America</span>
                     </div>
-                    <p>Empowering the Ekang community through unity and service since 2015.</p>
+                    <p data-i18n="footer-desc">Empowering the Ekang community through unity and service since 2015.</p>
                 </div>
                 <div>
-                    <h4 style="margin-bottom: 1.5rem;">Navigation</h4>
+                    <h4 style="margin-bottom: 1.5rem;" data-i18n="footer-nav">Navigation</h4>
                     <ul style="list-style: none;">
-                        <li style="margin-bottom: 0.5rem;"><a href="index.html">Home</a></li>
-                        <li style="margin-bottom: 0.5rem;"><a href="about.html">About</a></li>
-                        <li style="margin-bottom: 0.5rem;"><a href="activities.html">Activities</a></li>
-                        <li style="margin-bottom: 0.5rem;"><a href="members.html">Members</a></li>
-                        <li style="margin-bottom: 0.5rem;"><a href="contact.html">Contact</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="index.html" data-i18n="nav-home">Home</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="about.html" data-i18n="nav-about">About</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="activities.html" data-i18n="nav-activities">Activities</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="members.html" data-i18n="nav-members">Members</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="contact.html" data-i18n="nav-contact">Contact</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 style="margin-bottom: 1.5rem;">Contact</h4>
-                    <p>2566 7th Ave , New York, NY, United States, 10039</p>
+                    <h4 style="margin-bottom: 1.5rem;" data-i18n="footer-contact">Contact</h4>
+                    <p data-i18n="footer-addr-ny">2566 7th Ave , New York, NY, United States, 10039</p>
                     <p>info@nkulekangamerica.org</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                &copy; 2026 Nkul Ekang Y America. All rights reserved.
+                &copy; 2026 Nkul Ekang Y America. <span data-i18n="rights">All rights reserved.</span>
             </div>
         </div>
     </footer>
 
+    <script src="assets/js/translations.js"></script>
     <script>
         const menuToggle = document.querySelector('.menu-toggle');
         const navLinks = document.querySelector('.nav-links');

@@ -41,18 +41,26 @@
     <header>
         <div class="container">
             <nav>
-                <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 1rem;">
+                <a href="index.html" class="logo">
                     <img src="assets/images/logos/logo-removebg.png" alt="Logo" style="height: 50px;">
-                    <span>Nkul Ekang Y America</span>
+                    <div class="logo-text">
+                        <span>Nkul Ekang</span>
+                        <span>Y America</span>
+                    </div>
                 </a>
                 <div class="nav-links">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="activities.html">Activities</a>
-                    <a href="members.html">Members</a>
-                    <a href="news.html">News</a>
-                    <a href="galleria.html">Galleria</a>
-                    <a href="contact.html">Contact</a>
+                    <a href="index.html" data-i18n="nav-home">Home</a>
+                    <a href="about.html" data-i18n="nav-about">About</a>
+                    <a href="activities.html" data-i18n="nav-activities">Activities</a>
+                    <a href="members.html" data-i18n="nav-members">Members</a>
+                    <a href="news.html" data-i18n="nav-news">News</a>
+                    <a href="galleria.html" data-i18n="nav-galleria">Galleria</a>
+                    <a href="contact.html" data-i18n="nav-contact">Contact</a>
+                </div>
+                <div class="lang-switcher">
+                    <span class="lang-btn active" data-lang="en">EN</span>
+                    <span class="lang-btn" data-lang="fr">FR</span>
+                    <span class="lang-btn" data-lang="es">ES</span>
                 </div>
                 <button class="menu-toggle" aria-label="Toggle Menu">
                     <span></span>
@@ -66,9 +74,9 @@
     <main>
         <section class="page-banner" style="background-image: url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80&w=2000');">
             <div class="container">
-                <span style="text-transform: uppercase; font-weight: 700; color: var(--color-yellow); letter-spacing: 2px;">The Most Anticipated Event of 2026</span>
+                <span style="text-transform: uppercase; font-weight: 700; color: var(--color-yellow); letter-spacing: 2px;" data-i18n="ceka-hero-tag">The Most Anticipated Event of 2026</span>
                 <h1 style="margin-top: 0.5rem;">CEKA 2026</h1>
-                <p style="opacity: 0.9; margin-top: 1rem; max-width: 600px;">A groundbreaking gathering for community leaders, activists, and change-makers dedicated to driving meaningful social transformation.</p>
+                <p style="opacity: 0.9; margin-top: 1rem; max-width: 600px;" data-i18n="ceka-hero-subtitle">A groundbreaking gathering for community leaders, activists, and change-makers dedicated to driving meaningful social transformation.</p>
             </div>
         </section>
 
@@ -77,18 +85,18 @@
                 <div>
                     <div class="about-content-split" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; margin-bottom: 5rem;">
                         <div>
-                            <h2 style="margin-bottom: 1.5rem; color: var(--color-brown);">Our Mission</h2>
-                            <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">CEKA 2026 is more than a convention; it is a platform for empowerment, knowledge sharing, and collaborative action. We bring together the Ekang diaspora to celebrate our heritage while building a future of lasting positive change.</p>
+                            <h2 style="margin-bottom: 1.5rem; color: var(--color-brown);" data-i18n="ceka-mission-title">Our Mission</h2>
+                            <p style="font-size: 1.1rem; margin-bottom: 1.5rem;" data-i18n="ceka-mission-p1">CEKA 2026 is more than a convention; it is a platform for empowerment, knowledge sharing, and collaborative action. We bring together the Ekang diaspora to celebrate our heritage while building a future of lasting positive change.</p>
                             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem;">
                                 <div>
-                                    <h4 style="color: var(--color-brown); font-size: 0.8rem;">Location</h4>
-                                    <p style="font-weight: 700;">New York City, USA</p>
-                                    <small style="opacity: 0.7;">Venue: Coming Soon</small>
+                                    <h4 style="color: var(--color-brown); font-size: 0.8rem;" data-i18n="ceka-loc-title">Location</h4>
+                                    <p style="font-weight: 700;" data-i18n="ceka-loc-val">New York City, USA</p>
+                                    <small style="opacity: 0.7;" data-i18n="ceka-loc-venue">Venue: Coming Soon</small>
                                 </div>
                                 <div>
-                                    <h4 style="color: var(--color-brown); font-size: 0.8rem;">Expected</h4>
-                                    <p style="font-weight: 700;">1,000+ Participants</p>
-                                    <small style="opacity: 0.7;">USA, Canada & Beyond</small>
+                                    <h4 style="color: var(--color-brown); font-size: 0.8rem;" data-i18n="ceka-exp-title">Expected</h4>
+                                    <p style="font-weight: 700;" data-i18n="ceka-exp-val">1,000+ Participants</p>
+                                    <small style="opacity: 0.7;" data-i18n="ceka-exp-scope">USA, Canada & Beyond</small>
                                 </div>
                             </div>
                         </div>
@@ -99,32 +107,32 @@
                         </div>
                     </div>
 
-                    <h2 style="text-align: center; margin-bottom: 4rem; border-bottom: 2px solid var(--color-yellow); display: table; margin-left: auto; margin-right: auto; padding-bottom: 0.5rem;">The 4-Day Program</h2>
+                    <h2 style="text-align: center; margin-bottom: 4rem; border-bottom: 2px solid var(--color-yellow); display: table; margin-left: auto; margin-right: auto; padding-bottom: 0.5rem;" data-i18n="ceka-prog-title">The 4-Day Program</h2>
                     <div class="values-grid" style="margin-bottom: 5rem;">
                         <div class="card">
-                            <h3 style="color: var(--color-brown); margin-bottom: 1rem;">Workshops & Keynotes</h3>
-                            <p>6+ interactive workshops and hands-on sessions led by world-class presentations focused on professional and project development.</p>
+                            <h3 style="color: var(--color-brown); margin-bottom: 1rem;" data-i18n="ceka-day1-title">Workshops & Keynotes</h3>
+                            <p data-i18n="ceka-day1-desc">6+ interactive workshops and hands-on sessions led by world-class presentations focused on professional and project development.</p>
                         </div>
                         <div class="card">
-                            <h3 style="color: var(--color-brown); margin-bottom: 1rem;">Business Expo</h3>
-                            <p>A dedicated space for entrepreneurs to showcase new opportunities, network with industry leaders, and foster economic growth.</p>
+                            <h3 style="color: var(--color-brown); margin-bottom: 1rem;" data-i18n="ceka-day2-title">Business Expo</h3>
+                            <p data-i18n="ceka-day2-desc">A dedicated space for entrepreneurs to showcase new opportunities, network with industry leaders, and foster economic growth.</p>
                         </div>
                         <div class="card">
-                            <h3 style="color: var(--color-brown); margin-bottom: 1rem;">Cultural Evenings</h3>
-                            <p>Nightly heritage celebrations through music, art, storytelling, and traditional dances showcasing vibrant rhythms and movements.</p>
+                            <h3 style="color: var(--color-brown); margin-bottom: 1rem;" data-i18n="ceka-day3-title">Cultural Evenings</h3>
+                            <p data-i18n="ceka-day3-desc">Nightly heritage celebrations through music, art, storytelling, and traditional dances showcasing vibrant rhythms and movements.</p>
                         </div>
                         <div class="card">
-                            <h3 style="color: var(--color-brown); margin-bottom: 1rem;">Grand Gala Night</h3>
-                            <p>An elegant evening of formal dining and dancing to celebrate our community's achievements and strengthen our bonds.</p>
+                            <h3 style="color: var(--color-brown); margin-bottom: 1rem;" data-i18n="ceka-day4-title">Grand Gala Night</h3>
+                            <p data-i18n="ceka-day4-desc">An elegant evening of formal dining and dancing to celebrate our community's achievements and strengthen our bonds.</p>
                         </div>
                     </div>
 
                     <div style="padding: 4rem 2rem; background: var(--color-black); color: var(--color-white); text-align: center; border: 1px solid var(--color-yellow);">
-                        <h2 style="margin-bottom: 1.5rem; color: var(--color-yellow);">Join the Movement</h2>
-                        <p style="max-width: 600px; margin: 0 auto 2.5rem auto; opacity: 0.9;">Whether you are a community leader, a student, or a professional, CEKA 2026 is the place to build relationships and inspire change.</p>
+                        <h2 style="margin-bottom: 1.5rem; color: var(--color-yellow);" data-i18n="ceka-join-title">Join the Movement</h2>
+                        <p style="max-width: 600px; margin: 0 auto 2.5rem auto; opacity: 0.9;" data-i18n="ceka-join-desc">Whether you are a community leader, a student, or a professional, CEKA 2026 is the place to build relationships and inspire change.</p>
                         <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
-                            <a href="https://ebya2024.org/ceka-2026.html" target="_blank" class="btn btn-alt">Official Event Website</a>
-                            <a href="contact.html" class="btn" style="background: var(--color-white); color: var(--color-black);">Sponsorship Inquiry</a>
+                            <a href="https://ebya2024.org/ceka-2026.html" target="_blank" class="btn btn-alt" data-i18n="ceka-btn-event">Official Event Website</a>
+                            <a href="contact.html" class="btn" style="background: var(--color-white); color: var(--color-black);" data-i18n="ceka-btn-sponsor">Sponsorship Inquiry</a>
                         </div>
                     </div>
                 </div>
@@ -140,30 +148,31 @@
                         <img src="assets/images/logos/logo-removebg.png" alt="Logo" style="height: 40px;">
                         <span>Nkul Ekang Y America</span>
                     </div>
-                    <p>Empowering the Ekang community through unity and service since 2015.</p>
+                    <p data-i18n="footer-desc">Empowering the Ekang community through unity and service since 2015.</p>
                 </div>
                 <div>
-                    <h4 style="margin-bottom: 1.5rem;">Navigation</h4>
+                    <h4 style="margin-bottom: 1.5rem;" data-i18n="footer-nav">Navigation</h4>
                     <ul style="list-style: none;">
-                        <li style="margin-bottom: 0.5rem;"><a href="index.html">Home</a></li>
-                        <li style="margin-bottom: 0.5rem;"><a href="about.html">About</a></li>
-                        <li style="margin-bottom: 0.5rem;"><a href="activities.html">Activities</a></li>
-                        <li style="margin-bottom: 0.5rem;"><a href="members.html">Members</a></li>
-                        <li style="margin-bottom: 0.5rem;"><a href="contact.html">Contact</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="index.html" data-i18n="nav-home">Home</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="about.html" data-i18n="nav-about">About</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="activities.html" data-i18n="nav-activities">Activities</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="members.html" data-i18n="nav-members">Members</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="contact.html" data-i18n="nav-contact">Contact</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 style="margin-bottom: 1.5rem;">Contact</h4>
-                    <p>Washington, D.C., USA</p>
+                    <h4 style="margin-bottom: 1.5rem;" data-i18n="footer-contact">Contact</h4>
+                    <p data-i18n="footer-addr-dc">Washington, D.C., USA</p>
                     <p>info@nkulekangamerica.org</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                &copy; 2026 Nkul Ekang Y America. All rights reserved.
+                &copy; 2026 Nkul Ekang Y America. <span data-i18n="rights">All rights reserved.</span>
             </div>
         </div>
     </footer>
 
+    <script src="assets/js/translations.js"></script>
     <script>
         const menuToggle = document.querySelector('.menu-toggle');
         const navLinks = document.querySelector('.nav-links');

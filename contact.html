@@ -75,18 +75,26 @@
     <header>
         <div class="container">
             <nav>
-                <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 1rem;">
+                <a href="index.html" class="logo">
                     <img src="assets/images/logos/logo-removebg.png" alt="Logo" style="height: 50px;">
-                    <span>Nkul Ekang Y America</span>
+                    <div class="logo-text">
+                        <span>Nkul Ekang</span>
+                        <span>Y America</span>
+                    </div>
                 </a>
                 <div class="nav-links">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="activities.html">Activities</a>
-                    <a href="members.html">Members</a>
-                    <a href="news.html">News</a>
-                    <a href="galleria.html">Galleria</a>
-                    <a href="contact.html">Contact</a>
+                    <a href="index.html" data-i18n="nav-home">Home</a>
+                    <a href="about.html" data-i18n="nav-about">About</a>
+                    <a href="activities.html" data-i18n="nav-activities">Activities</a>
+                    <a href="members.html" data-i18n="nav-members">Members</a>
+                    <a href="news.html" data-i18n="nav-news">News</a>
+                    <a href="galleria.html" data-i18n="nav-galleria">Galleria</a>
+                    <a href="contact.html" data-i18n="nav-contact">Contact</a>
+                </div>
+                <div class="lang-switcher">
+                    <span class="lang-btn active" data-lang="en">EN</span>
+                    <span class="lang-btn" data-lang="fr">FR</span>
+                    <span class="lang-btn" data-lang="es">ES</span>
                 </div>
                 <button class="menu-toggle" aria-label="Toggle Menu">
                     <span></span>
@@ -100,8 +108,8 @@
     <main>
         <section class="page-banner" style="background-image: url('assets/images/banierecontact.jpg');">
             <div class="container">
-                <h1>Get in Touch</h1>
-                <p style="margin-top: 1rem; font-weight: 500; opacity: 0.9; max-width: 600px;">Have questions or want to join our association? We'd love to hear from you.</p>
+                <h1 data-i18n="contact-hero-title">Get in Touch</h1>
+                <p style="margin-top: 1rem; font-weight: 500; opacity: 0.9; max-width: 600px;" data-i18n="contact-hero-subtitle">Have questions or want to join our association? We'd love to hear from you.</p>
             </div>
         </section>
 
@@ -109,48 +117,48 @@
             <div class="container">
                 <div class="contact-container">
                     <div>
-                        <h2 style="margin-bottom: 2rem;">Send a Message</h2>
+                        <h2 style="margin-bottom: 2rem;" data-i18n="contact-form-title">Send a Message</h2>
                         <form>
                             <div class="form-group">
-                                <label for="name">Full Name</label>
-                                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                                <label for="name" data-i18n="label-name">Full Name</label>
+                                <input type="text" id="name" name="name" placeholder="Enter your full name" data-i18n="placeholder-name" required>
                             </div>
                             <div class="form-group">
-                                <label for="email">Email Address</label>
-                                <input type="email" id="email" name="email" placeholder="email@example.com" required>
+                                <label for="email" data-i18n="label-email">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="email@example.com" data-i18n="placeholder-email" required>
                             </div>
                             <div class="form-group">
-                                <label for="subject">Subject</label>
-                                <input type="text" id="subject" name="subject" placeholder="What is this about?">
+                                <label for="subject" data-i18n="label-subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="What is this about?" data-i18n="placeholder-subject">
                             </div>
                             <div class="form-group">
-                                <label for="message">Message</label>
-                                <textarea id="message" name="message" rows="6" placeholder="Your message here..." required></textarea>
+                                <label for="message" data-i18n="label-message">Message</label>
+                                <textarea id="message" name="message" rows="6" placeholder="Your message here..." data-i18n="placeholder-message" required></textarea>
                             </div>
-                            <button type="submit" class="btn">Submit Message</button>
+                            <button type="submit" class="btn" data-i18n="btn-submit">Submit Message</button>
                         </form>
                     </div>
 
                     <div>
-                        <h2 style="margin-bottom: 2rem;">Contact Information</h2>
+                        <h2 style="margin-bottom: 2rem;" data-i18n="contact-info-title">Contact Information</h2>
                         
                         <div class="info-block">
-                            <h3>Main Office</h3>
-                            <p>2566 7th Ave , New York, NY, United States, 10039</p>
+                            <h3 data-i18n="info-office-title">Main Office</h3>
+                            <p data-i18n="footer-addr-ny">2566 7th Ave , New York, NY, United States, 10039</p>
                             <p>United States of America</p>
                         </div>
 
                         <div class="info-block">
-                            <h3>Email & Phone</h3>
+                            <h3 data-i18n="info-email-title">Email & Phone</h3>
                             <p><strong>General:</strong> info@nkulekangamerica.org</p>
                             <p><strong>Membership:</strong> join@nkulekangamerica.org</p>
                             <p><strong>Phone:</strong> +1 646-966-8748</p>
                         </div>
 
                         <div class="info-block">
-                            <h3>Office Hours</h3>
-                            <p>Monday - Friday: 9:00 AM - 5:00 PM EST</p>
-                            <p>Saturday: 10:00 AM - 2:00 PM EST</p>
+                            <h3 data-i18n="info-hours-title">Office Hours</h3>
+                            <p data-i18n="info-hours-mon">Monday - Friday: 9:00 AM - 5:00 PM EST</p>
+                            <p data-i18n="info-hours-sat">Saturday: 10:00 AM - 2:00 PM EST</p>
                         </div>
 
                         <!--div style="background: var(--color-gray-light); height: 250px; border: 1px solid var(--color-black); display: flex; align-items: center; justify-content: center; text-transform: uppercase; font-weight: 700; font-size: 0.8rem; letter-spacing: 2px;">
@@ -170,30 +178,31 @@
                         <img src="assets/images/logos/logo-removebg.png" alt="Logo" style="height: 40px;">
                         <span>Nkul Ekang Y America</span>
                     </div>
-                    <p>Empowering the Ekang community through unity and service since 2015.</p>
+                    <p data-i18n="footer-desc">Empowering the Ekang community through unity and service since 2015.</p>
                 </div>
                 <div>
-                    <h4 style="margin-bottom: 1.5rem;">Navigation</h4>
+                    <h4 style="margin-bottom: 1.5rem;" data-i18n="footer-nav">Navigation</h4>
                     <ul style="list-style: none;">
-                        <li style="margin-bottom: 0.5rem;"><a href="index.html">Home</a></li>
-                        <li style="margin-bottom: 0.5rem;"><a href="about.html">About</a></li>
-                        <li style="margin-bottom: 0.5rem;"><a href="activities.html">Activities</a></li>
-                        <li style="margin-bottom: 0.5rem;"><a href="members.html">Members</a></li>
-                        <li style="margin-bottom: 0.5rem;"><a href="contact.html">Contact</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="index.html" data-i18n="nav-home">Home</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="about.html" data-i18n="nav-about">About</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="activities.html" data-i18n="nav-activities">Activities</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="members.html" data-i18n="nav-members">Members</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="contact.html" data-i18n="nav-contact">Contact</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 style="margin-bottom: 1.5rem;">Contact</h4>
-                    <p>2566 7th Ave , New York, NY, United States, 10039</p>
+                    <h4 style="margin-bottom: 1.5rem;" data-i18n="footer-contact">Contact</h4>
+                    <p data-i18n="footer-addr-ny">2566 7th Ave , New York, NY, United States, 10039</p>
                     <p>info@nkulekangamerica.org</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                &copy; 2026 Nkul Ekang Y America. All rights reserved.
+                &copy; 2026 Nkul Ekang Y America. <span data-i18n="rights">All rights reserved.</span>
             </div>
         </div>
     </footer>
 
+    <script src="assets/js/translations.js"></script>
     <script>
         const menuToggle = document.querySelector('.menu-toggle');
         const navLinks = document.querySelector('.nav-links');
