@@ -58,6 +58,61 @@
                 font-size: 1.1rem;
             }
         }
+
+        /* Unity section: Cameroon flag left, United States flag right */
+        .unity-section {
+            background: var(--color-gray-light);
+            border-top: 1px solid var(--color-black);
+            border-bottom: 1px solid var(--color-black);
+        }
+        .unity-grid {
+            display: grid;
+            grid-template-columns: 1fr minmax(0, 640px) 1fr;
+            align-items: center;
+            gap: 2rem;
+        }
+        .unity-flag {
+            display: flex;
+            justify-content: center;
+        }
+        .unity-flag img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border: 1px solid var(--color-black);
+            box-shadow: 0 10px 24px rgba(0,0,0,0.25);
+        }
+        .unity-text {
+            text-align: center;
+        }
+        .unity-text h2 {
+            margin-bottom: 1rem;
+        }
+        .unity-text p {
+            opacity: 0.85;
+        }
+
+        @media (max-width: 900px) {
+            .unity-grid {
+                grid-template-columns: 1fr;
+                justify-items: center;
+                gap: 1.5rem;
+            }
+            .unity-text {
+                order: 2;
+            }
+            .unity-flag.flag-left { order: 1; }
+            .unity-flag.flag-right { order: 3; }
+            .unity-flag img {
+                max-width: 180px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .unity-flag img {
+                max-width: 140px;
+            }
+        }
         .stats-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -79,7 +134,7 @@
         <div class="container">
             <nav>
                 <a href="index.html" class="logo">
-                    <img src="assets/images/logos/logo-removebg.png" alt="Logo" style="height: 50px;">
+                    <img src="assets/images/logos/logo.jpg" alt="Logo" style="height: 50px;">
                     <div class="logo-text">
                         <span>Nkul Ekang</span>
                         <span>Y America</span>
@@ -115,6 +170,23 @@
                     <h1 data-i18n="hero-title">Strength in Community</h1>
                     <p data-i18n="hero-subtitle">Building a brighter future for the Ekang community in America through education, empowerment, and cultural preservation.</p>
                     <a href="contact.html" class="btn btn-alt" data-i18n="hero-btn">Join Our Mission</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="unity-section">
+            <div class="container">
+                <div class="unity-grid">
+                    <div class="unity-flag flag-left">
+                        <img src="assets/images/flags/cameroon.png" alt="Flag of Cameroon">
+                    </div>
+                    <div class="unity-text">
+                        <h2 data-i18n="unity-title">Two Nations, One Heritage</h2>
+                        <p data-i18n="unity-desc">Rooted in Cameroon, thriving in the United States &mdash; our association stands as a bridge between the land of our ancestors and the home we are building today.</p>
+                    </div>
+                    <div class="unity-flag flag-right">
+                        <img src="assets/images/flags/usa.png" alt="Flag of the United States">
+                    </div>
                 </div>
             </div>
         </section>
@@ -212,7 +284,7 @@
             <div class="footer-grid">
                 <div>
                     <div class="logo" style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
-                        <img src="assets/images/logos/logo-removebg.png" alt="Logo" style="height: 40px;">
+                        <img src="assets/images/logos/logo.jpg" alt="Logo" style="height: 40px;">
                         <span>Nkul Ekang Y America</span>
                     </div>
                     <p data-i18n="footer-desc">Empowering the Ekang community through unity and service since 2015.</p>
